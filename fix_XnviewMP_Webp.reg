@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Applications\xnviewmp.exe\shell\open\command]
+@="\"%USERPROFILE%\\OneDrive\\bin\\XnViewMP\\xnviewmp.exe\" \"%1\""
