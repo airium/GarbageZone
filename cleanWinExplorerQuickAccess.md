@@ -14,3 +14,8 @@ Quick Access 被重置时将默认添加以下 4 个文件夹：
 同时将读取 `%USERPROFILE%\Links` 下的所有快捷方式。
 
 可以定期备份 Quick Access 所有路径的快捷方式。这样在重置 Quick Access 或配置新机器时可以快速恢复先前设定。
+
+## Ref
+
+1. <https://superuser.com/questions/1051440/where-are-the-win-10-quick-access-settings-stored>
+2. <https://www.winhelponline.com/blog/fix-quick-access-reset-pinned-shortcuts-stuck-not-working-windows-10/>
