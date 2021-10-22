@@ -48,8 +48,8 @@ def Main(args):
               + '[HKEY_CURRENT_USER\\Environment]\r\n' \
               + f'"{args.varname}"=hex(2):' \
               + ','.join(f'{c:02x}' for c in paths.encode('utf-16-le')) \
-              + '\r\n'
-        Path(f'{args.varname}.reg').write_bytes(entry.encode('utf-16-le'))
+              + ',00,00\r\n'
+        Path(f'{args.varname}.reg').write_bytes(b'\xff\xfe' + entry.encode('utf-16-le'))
         input(f'Saved paths to \'{args.varname}.reg\'.')
     else:
         with ConnectRegistry(None, HKEY_CURRENT_USER) as reg:
